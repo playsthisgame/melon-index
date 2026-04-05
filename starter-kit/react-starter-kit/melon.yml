@@ -1,0 +1,17 @@
+name: react-starter-kit
+version: 0.1.0
+
+description: "A curated list of agentic skills needed for react development"
+
+dependencies:
+  github.com/anthropics/skills/skills/frontend-design: "main"
+  github.com/vercel-labs/agent-skills/skills/react-best-practices: "main"
+  github.com/vercel-labs/agent-skills/skills/web-design-guidelines: "main"
+
+tool_compat:
+  - claude-code
+
+tags:
+  - frontend
+  - web development
+  - react
