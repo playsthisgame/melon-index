@@ -1,0 +1,288 @@
+skills:
+
+  - name: github.com/vercel-labs/skills/find-skills
+    description: "Discover and install skills from the open agent skills ecosystem"
+    author: vercel-labs
+    tags: [productivity, skills, discovery]
+
+  - name: github.com/vercel-labs/agent-skills/vercel-react-best-practices
+    description: "React best practices and patterns from Vercel Engineering"
+    author: vercel-labs
+    tags: [react, frontend, best-practices]
+
+  - name: github.com/anthropics/skills/frontend-design
+    description: "Frontend design principles and UI implementation guidance"
+    author: anthropics
+    tags: [frontend, design, ui]
+
+  - name: github.com/vercel-labs/agent-skills/web-design-guidelines
+    description: "Web design guidelines and visual best practices"
+    author: vercel-labs
+    tags: [design, frontend, ui]
+
+  - name: github.com/remotion-dev/skills/remotion-best-practices
+    description: "Best practices for building video with Remotion"
+    author: remotion-dev
+    tags: [video, remotion, frontend]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-ai
+    description: "Azure AI services integration patterns and guidance"
+    author: microsoft
+    tags: [azure, ai, cloud]
+
+  - name: github.com/vercel-labs/agent-browser/agent-browser
+    description: "Browser automation and web interaction capabilities"
+    author: vercel-labs
+    tags: [browser, automation, scraping]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-messaging
+    description: "Azure messaging services — Service Bus, Event Grid, Event Hubs"
+    author: microsoft
+    tags: [azure, messaging, cloud]
+
+  - name: github.com/anthropics/skills/skill-creator
+    description: "Create and publish your own reusable agent skills"
+    author: anthropics
+    tags: [skills, productivity, meta]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-observability
+    description: "Azure monitoring, logging, and observability best practices"
+    author: microsoft
+    tags: [azure, observability, monitoring]
+
+  - name: github.com/inferen-sh/skills/ai-image-generation
+    description: "AI image generation workflows and prompt engineering"
+    author: inferen-sh
+    tags: [ai, image-generation, creative]
+
+  - name: github.com/microsoft/azure-skills/microsoft-foundry
+    description: "Microsoft Azure AI Foundry models and deployment guidance"
+    author: microsoft
+    tags: [azure, ai, foundry]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-hosted-copilot-sdk
+    description: "Azure-hosted GitHub Copilot SDK integration patterns"
+    author: microsoft
+    tags: [azure, copilot, sdk]
+
+  - name: github.com/inferen-sh/skills/ai-video-generation
+    description: "AI video generation workflows and tooling"
+    author: inferen-sh
+    tags: [ai, video, creative]
+
+  - name: github.com/microsoft/azure-skills/azure-ai
+    description: "Azure AI platform skills and model deployment"
+    author: microsoft
+    tags: [azure, ai, cloud]
+
+  - name: github.com/vercel-labs/agent-skills/vercel-composition-patterns
+    description: "Component composition patterns for Vercel and React apps"
+    author: vercel-labs
+    tags: [react, composition, patterns]
+
+  - name: github.com/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max
+    description: "Professional UI/UX design and implementation techniques"
+    author: nextlevelbuilder
+    tags: [ui, ux, design]
+
+  - name: github.com/microsoft/azure-skills/azure-quotas
+    description: "Azure quota management and resource limit guidance"
+    author: microsoft
+    tags: [azure, quotas, cloud]
+
+  - name: github.com/obra/superpowers/brainstorming
+    description: "Structured brainstorming techniques for exploring problems and ideas"
+    author: obra
+    tags: [productivity, planning, creativity]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-compute
+    description: "Azure compute resources — VMs, AKS, App Service guidance"
+    author: microsoft
+    tags: [azure, compute, cloud]
+
+  - name: github.com/vercel-labs/agent-skills/vercel-react-native-skills
+    description: "React Native development best practices for mobile apps"
+    author: vercel-labs
+    tags: [react-native, mobile, frontend]
+
+  - name: github.com/microsoft/azure-skills/azure-upgrade
+    description: "Azure service upgrade paths and migration guidance"
+    author: microsoft
+    tags: [azure, migration, cloud]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-cloud-migrate
+    description: "Migrating workloads to Azure cloud infrastructure"
+    author: microsoft
+    tags: [azure, migration, cloud]
+
+  - name: github.com/coreyhaines31/marketingskills/seo-audit
+    description: "SEO audit workflows and optimization recommendations"
+    author: coreyhaines31
+    tags: [seo, marketing, audit]
+
+  - name: github.com/browser-use/browser-use/browser-use
+    description: "Browser automation agent for web interaction tasks"
+    author: browser-use
+    tags: [browser, automation, agent]
+
+  - name: github.com/supabase/agent-skills/supabase-postgres-best-practices
+    description: "Supabase and Postgres best practices from the Supabase team"
+    author: supabase
+    tags: [supabase, postgres, database]
+
+  - name: github.com/anthropics/skills/pdf
+    description: "Read, extract, and analyze PDF documents"
+    author: anthropics
+    tags: [pdf, documents, productivity]
+
+  - name: github.com/inferen-sh/skills/elevenlabs-tts
+    description: "Text-to-speech audio generation via ElevenLabs"
+    author: inferen-sh
+    tags: [tts, audio, ai]
+
+  - name: github.com/inferen-sh/skills/elevenlabs-music
+    description: "AI music generation via ElevenLabs"
+    author: inferen-sh
+    tags: [music, audio, ai]
+
+  - name: github.com/coreyhaines31/marketingskills/copywriting
+    description: "Copywriting frameworks and persuasive writing techniques"
+    author: coreyhaines31
+    tags: [copywriting, marketing, writing]
+
+  - name: github.com/shadcn/ui/shadcn
+    description: "shadcn/ui component library usage and customization"
+    author: shadcn
+    tags: [ui, components, react]
+
+  - name: github.com/anthropics/skills/pptx
+    description: "Create and edit PowerPoint presentations"
+    author: anthropics
+    tags: [pptx, documents, productivity]
+
+  - name: github.com/vercel-labs/next-skills/next-best-practices
+    description: "Next.js best practices for routing, rendering, and performance"
+    author: vercel-labs
+    tags: [nextjs, react, frontend]
+
+  - name: github.com/obra/superpowers/systematic-debugging
+    description: "Systematic debugging methodology for diagnosing hard problems"
+    author: obra
+    tags: [debugging, workflow, productivity]
+
+  - name: github.com/anthropics/skills/docx
+    description: "Read, create, and edit Word documents"
+    author: anthropics
+    tags: [docx, documents, productivity]
+
+  - name: github.com/obra/superpowers/writing-plans
+    description: "Write clear, actionable implementation plans before coding"
+    author: obra
+    tags: [planning, workflow, productivity]
+
+  - name: github.com/obra/superpowers/using-superpowers
+    description: "Guide to getting the most out of the obra/superpowers skill collection"
+    author: obra
+    tags: [productivity, meta, workflow]
+
+  - name: github.com/roin-orca/skills/simple
+    description: "Simplicity-first approach to code and problem solving"
+    author: roin-orca
+    tags: [simplicity, code-quality, workflow]
+
+  - name: github.com/squirrelscan/skills/audit-website
+    description: "Website auditing for performance, accessibility, and best practices"
+    author: squirrelscan
+    tags: [audit, web, performance]
+
+  - name: github.com/anthropics/skills/xlsx
+    description: "Read, create, and edit Excel spreadsheets"
+    author: anthropics
+    tags: [xlsx, documents, productivity]
+
+  - name: github.com/coreyhaines31/marketingskills/marketing-psychology
+    description: "Psychological principles applied to marketing and user persuasion"
+    author: coreyhaines31
+    tags: [marketing, psychology, writing]
+
+  - name: github.com/obra/superpowers/test-driven-development
+    description: "TDD workflow — write tests first, drive design from tests"
+    author: obra
+    tags: [tdd, testing, workflow]
+
+  - name: github.com/anthropics/skills/webapp-testing
+    description: "Web application testing strategies and tooling"
+    author: anthropics
+    tags: [testing, web, quality]
+
+  - name: github.com/obra/superpowers/requesting-code-review
+    description: "Guidelines for preparing and requesting effective code reviews"
+    author: obra
+    tags: [code-review, workflow, collaboration]
+
+  - name: github.com/pbakaus/impeccable/frontend-design
+    description: "Opinionated frontend design standards for polished UIs"
+    author: pbakaus
+    tags: [frontend, design, ui]
+
+  - name: github.com/obra/superpowers/executing-plans
+    description: "Execute implementation plans methodically and track progress"
+    author: obra
+    tags: [planning, workflow, productivity]
+
+  - name: github.com/microsoft/github-copilot-for-azure/azure-postgres
+    description: "Azure Database for PostgreSQL setup and best practices"
+    author: microsoft
+    tags: [azure, postgres, database]
+
+  - name: github.com/pbakaus/impeccable/polish
+    description: "Polish and refine code and UI to a high standard"
+    author: pbakaus
+    tags: [quality, refactoring, ui]
+
+  - name: github.com/coreyhaines31/marketingskills/content-strategy
+    description: "Content strategy frameworks for planning and distributing content"
+    author: coreyhaines31
+    tags: [content, marketing, strategy]
+
+  - name: github.com/pbakaus/impeccable/critique
+    description: "Critical evaluation of code, design, and decisions"
+    author: pbakaus
+    tags: [critique, quality, review]
+
+  - name: github.com/obra/superpowers/receiving-code-review
+    description: "Best practices for receiving and acting on code review feedback"
+    author: obra
+    tags: [code-review, workflow, collaboration]
+
+  - name: github.com/supercent-io/skills-template/git-workflow
+    description: "Opinionated git workflow — branching, commits, and PR conventions"
+    author: supercent-io
+    tags: [git, workflow, branching]
+
+  - name: github.com/wshobson/agents/code-review-excellence
+    description: "Code review excellence practices and standards"
+    author: wshobson
+    tags: [code-review, quality, best-practices]
+
+  - name: github.com/wshobson/agents/git-advanced-workflows
+    description: "Advanced git workflows for complex branching and merging scenarios"
+    author: wshobson
+    tags: [git, workflow, advanced]
+
+  - name: github.com/jeffallan/claude-skills/golang-pro
+    description: "Expert-level Go development patterns, idioms, and best practices"
+    author: jeffallan
+    tags: [golang, best-practices, backend]
+
+  - name: github.com/affaan-m/everything-claude-code/golang-patterns
+    description: "Common Go design patterns and architectural approaches"
+    author: affaan-m
+    tags: [golang, patterns, architecture]
+
+  - name: github.com/affaan-m/everything-claude-code/golang-testing
+    description: "Go testing strategies, table-driven tests, and test utilities"
+    author: affaan-m
+    tags: [golang, testing, quality]
+  
+  
