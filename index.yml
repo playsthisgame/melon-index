@@ -317,3 +317,33 @@ skills:
     author: playsthisgame
     tags: [development, agents, quality]
     featured: true
+
+  - name: github.com/github/awesome-copilot/skills/java-springboot
+    description: "Best practices guide for building production-ready Spring Boot applications"
+    author: github/awesome-copilot
+    tags: [java, spring-boot, best-practices, architecture, rest-api]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/java-junit
+    description: "JUnit 5 best practices — AAA pattern, parameterized tests, AssertJ, and Mockito"
+    author: github/awesome-copilot
+    tags: [java, junit, testing, unit-tests, mockito]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/java-docs
+    description: "Javadoc best practices for documenting Java types, methods, and members"
+    author: github/awesome-copilot
+    tags: [java, javadoc, documentation]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/create-spring-boot-java-project
+    description: "Scaffold a Spring Boot 3.x project with PostgreSQL, Redis, MongoDB, Docker Compose, and OpenAPI"
+    author: github/awesome-copilot
+    tags: [java, spring-boot, scaffolding, docker, postgresql, mongodb, redis]
+    featured: true
+
+  - name: github.com/jeffallan/claude-skills/skills/spring-boot-engineer
+    description: "Generates layered Spring Boot 3.x apps with REST controllers, JPA repositories, Spring Security, and Testcontainers"
+    author: jeffallan
+    tags: [java, spring-boot, code-generation, rest-api, spring-security, testcontainers]
+    featured: true
