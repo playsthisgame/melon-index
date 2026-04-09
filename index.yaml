@@ -348,8 +348,224 @@ skills:
     tags: [java, spring-boot, code-generation, rest-api, spring-security, testcontainers]
     featured: true
 
-  - name: github.com/zc277584121/marketing-skills/skills/video-to-gif
-    description: "Convert video files (.mov, .mp4, etc.) to GIF with multiple quality/size variants using FFmpeg"
-    author: zc277584121
-    tags: [video, gif, ffmpeg, conversion]
+  - name: github.com/anthropics/skills/skills/mcp-builder
+    description: "Build high-quality MCP (Model Context Protocol) servers in Python and TypeScript"
+    author: anthropics
+    tags: [mcp, developer-tools, python, typescript, api]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/claude-api
+    description: "Build LLM-powered applications using the Claude API"
+    author: anthropics
+    tags: [ai, claude-api, developer-tools, llm]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/algorithmic-art
+    description: "Create generative art using p5.js with seeded randomness and interactive parameters"
+    author: anthropics
+    tags: [creative, generative-art, p5js, design]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/doc-coauthoring
+    description: "Structured workflow for collaborative document creation and iterative refinement"
+    author: anthropics
+    tags: [writing, documentation, collaboration, productivity]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/web-artifacts-builder
+    description: "Build multi-component HTML artifacts using React 18, Tailwind CSS, shadcn/ui, TypeScript, and Vite"
+    author: anthropics
+    tags: [frontend, react, typescript, tailwind, artifacts]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/brand-guidelines
+    description: "Apply official brand colors, typography, and visual standards to artifacts and designs"
+    author: anthropics
+    tags: [design, branding, style-guide]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/canvas-design
+    description: "Create visual art in PNG and PDF documents using canvas-based drawing tools"
+    author: anthropics
+    tags: [design, creative, canvas, pdf]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/theme-factory
+    description: "Apply professional font and color themes to artifacts"
+    author: anthropics
+    tags: [design, theming, ui, styling]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/slack-gif-creator
+    description: "Create animated GIFs optimized for Slack"
+    author: anthropics
+    tags: [media, slack, gif, creative]
+    featured: true
+
+  - name: github.com/anthropics/skills/skills/internal-comms
+    description: "Write internal communications and company newsletters"
+    author: anthropics
+    tags: [writing, communication, business]
+    featured: true
+
+  - name: github.com/vercel-labs/agent-skills/skills/deploy-to-vercel
+    description: "Deploy applications to Vercel via git push, CLI, or token-based auth"
+    author: vercel-labs
+    tags: [deployment, vercel, devops, ci-cd]
+    featured: true
+
+  - name: github.com/vercel-labs/agent-skills/skills/react-view-transitions
+    description: "Implement smooth animations using React's View Transition API and Next.js integration"
+    author: vercel-labs
+    tags: [react, animations, frontend, nextjs]
+    featured: true
+
+  - name: github.com/vercel-labs/agent-skills/skills/vercel-cli-with-tokens
+    description: "Deploy and manage Vercel projects using CLI with token-based authentication"
+    author: vercel-labs
+    tags: [deployment, vercel, cli, devops]
+    featured: true
+
+  - name: github.com/obra/superpowers/skills/dispatching-parallel-agents
+    description: "Delegate independent tasks to isolated subagents running concurrently"
+    author: obra
+    tags: [agentic, parallel, productivity, workflow]
+    featured: true
+
+  - name: github.com/obra/superpowers/skills/verification-before-completion
+    description: "Enforce running verification commands and confirming output before claiming work is complete"
+    author: obra
+    tags: [testing, quality, workflow, verification]
+    featured: true
+
+  - name: github.com/obra/superpowers/skills/using-git-worktrees
+    description: "Create isolated git worktrees with smart directory selection for parallel branch development"
+    author: obra
+    tags: [git, workflow, developer-tools]
+    featured: true
+
+  - name: github.com/obra/superpowers/skills/finishing-a-development-branch
+    description: "Complete development work — verify tests, then merge, PR, preserve, or discard"
+    author: obra
+    tags: [git, workflow, developer-tools, ci-cd]
+    featured: true
+
+  - name: github.com/obra/superpowers/skills/writing-skills
+    description: "Test-driven methodology for building reliable agent skills — RED-GREEN-REFACTOR cycle"
+    author: obra
+    tags: [meta, skills, developer-tools, documentation]
+    featured: true
+
+  - name: github.com/supabase/agent-skills/skills/supabase
+    description: "Comprehensive Supabase development — Database, Auth, Edge Functions, Realtime, Storage, Vectors, and MCP server"
+    author: supabase
+    tags: [database, supabase, backend, postgres, auth]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-kubernetes
+    description: "Plan and configure production-ready AKS clusters with security, observability, and cost optimization"
+    author: microsoft
+    tags: [azure, kubernetes, devops, infrastructure, cloud]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-deploy
+    description: "Execute Azure deployments via azd, Terraform, and az deployment commands with error recovery"
+    author: microsoft
+    tags: [azure, deployment, devops, terraform, infrastructure]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-storage
+    description: "Manage Azure Storage Services — Blob, File Shares, Queue, Table, and Data Lake"
+    author: microsoft
+    tags: [azure, storage, cloud, infrastructure]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-diagnostics
+    description: "Debug Azure production issues via AppLens, Azure Monitor, and resource health"
+    author: microsoft
+    tags: [azure, monitoring, debugging, observability]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-compliance
+    description: "Perform Azure compliance and security assessments — validate resources and identify misconfigurations"
+    author: microsoft
+    tags: [azure, security, compliance, cloud]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-rbac
+    description: "Identify Azure RBAC roles following least-privilege principles and generate role assignment code"
+    author: microsoft
+    tags: [azure, security, iam, rbac]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/appinsights-instrumentation
+    description: "Add Azure Application Insights telemetry to web apps — ASP.NET Core and Node.js"
+    author: microsoft
+    tags: [azure, monitoring, observability, telemetry]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-validate
+    description: "Pre-deployment validation for Azure readiness — checks Bicep/Terraform, RBAC, and managed identity permissions"
+    author: microsoft
+    tags: [azure, deployment, validation, infrastructure]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-prepare
+    description: "Prepare Azure applications for deployment — generates Bicep/Terraform, azure.yaml, and Dockerfiles"
+    author: microsoft
+    tags: [azure, deployment, infrastructure, docker]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/entra-app-registration
+    description: "Guide Microsoft Entra ID app registration, OAuth 2.0 authentication, and MSAL integration"
+    author: microsoft
+    tags: [azure, auth, oauth, security, microsoft-entra]
+    featured: true
+
+  - name: github.com/microsoft/github-copilot-for-azure/plugin/skills/azure-resource-lookup
+    description: "List and find Azure resources across subscriptions — inventory, tag analysis, and orphaned resource discovery"
+    author: microsoft
+    tags: [azure, cloud, inventory, infrastructure]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/python-mcp-server-generator
+    description: "Generate a complete MCP server project in Python with tools, type hints, and stdio/HTTP transport"
+    author: github/awesome-copilot
+    tags: [python, mcp, developer-tools, ai, server]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/typescript-mcp-server-generator
+    description: "Generate a complete MCP server project in TypeScript with tools, resources, and production config"
+    author: github/awesome-copilot
+    tags: [typescript, mcp, developer-tools, ai, server]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/dotnet-best-practices
+    description: "Validate .NET/C# code — DI, async patterns, Semantic Kernel AI integration, and .NET 8/C# 12+ conventions"
+    author: github/awesome-copilot
+    tags: [dotnet, csharp, backend, best-practices]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/csharp-async
+    description: "C# async programming best practices — Task/ValueTask, exception handling, and async streams"
+    author: github/awesome-copilot
+    tags: [csharp, dotnet, async, best-practices]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/kotlin-springboot
+    description: "Production-quality Kotlin Spring Boot applications — coroutines, DI, data layer, and testing"
+    author: github/awesome-copilot
+    tags: [kotlin, spring-boot, backend, jvm]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/codeql
+    description: "Configure and run CodeQL code scanning via GitHub Actions or CLI — SARIF interpretation and security analysis"
+    author: github/awesome-copilot
+    tags: [security, code-scanning, github-actions, devsecops]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/agentic-eval
+    description: "Patterns for evaluating AI agent outputs — self-critique loops, evaluator-optimizer pipelines, rubric-based evaluation"
+    author: github/awesome-copilot
+    tags: [ai, evaluation, quality, agentic]
     featured: true
