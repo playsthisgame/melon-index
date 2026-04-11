@@ -575,3 +575,34 @@ skills:
     author: github.com/forrestchang
     tags: [ai, insights, guidelines]
     featured: true
+
+  - name: github.com/JuliusBrussee/caveman/skills/caveman
+    description: "Ultra-compressed communication mode that cuts token usage ~75% by speaking like a caveman while keeping full technical accuracy. Supports lite, full, ultra, and wenyan register variants."
+    author: JuliusBrussee
+    tags: [productivity, tokens, communication, compression]
+    featured: true
+
+  - name: github.com/JuliusBrussee/caveman/skills/caveman-commit
+    description: "Ultra-compressed commit message generator using Conventional Commits format — subject ≤50 chars, body only when the 'why' isn't obvious from the diff"
+    author: JuliusBrussee
+    tags: [git, commit, productivity, compression]
+    featured: true
+
+  - name: github.com/JuliusBrussee/caveman/skills/caveman-help
+    description: "Quick-reference card for all caveman modes, skills, and commands including configuration via env var or config file"
+    author: JuliusBrussee
+    tags: [productivity, documentation, reference]
+    featured: true
+
+  - name: github.com/JuliusBrussee/caveman/skills/caveman-review
+    description: "Ultra-compressed code review comments — one line per issue with location, problem, and fix. Supports bug/risk/nit/question severity prefixes."
+    author: JuliusBrussee
+    tags: [code-review, productivity, compression, workflow]
+    featured: true
+
+  - name: github.com/JuliusBrussee/caveman/skills/compress
+    description: "Compresses natural language memory files (CLAUDE.md, todos, preferences) into caveman format to reduce input tokens (~46% savings) while preserving code, URLs, and technical terms"
+    author: JuliusBrussee
+    tags: [productivity, compression, memory, tokens]
+    featured: true
+
