@@ -1,0 +1,14 @@
+name: melon-index
+version: 0.1.0
+description: An index of skills used by melon
+entrypoint: ""
+dependencies:
+    github.com/JuliusBrussee/caveman/skills/caveman: ^1.5.1
+    github.com/JuliusBrussee/caveman/skills/caveman-commit: ^1.5.1
+    github.com/JuliusBrussee/caveman/skills/caveman-help: ^1.5.1
+    github.com/JuliusBrussee/caveman/skills/caveman-review: ^1.5.1
+    github.com/JuliusBrussee/caveman/skills/compress: ^1.5.1
+    github.com/jeremylongshore/claude-code-plugins-plus-skills/plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master: main
+    github.com/vercel-labs/skills/skills/find-skills: main
+tool_compat:
+    - claude-code

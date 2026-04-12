@@ -606,3 +606,129 @@ skills:
     tags: [productivity, compression, memory, tokens]
     featured: true
 
+  - name: github.com/microsoft/azure-skills/skills/azure-resource-visualizer
+    description: "Analyze Azure resource groups and generate Mermaid architecture diagrams showing resource relationships and infrastructure topology"
+    author: microsoft
+    tags: [azure, cloud, architecture, diagrams, infrastructure]
+    featured: true
+
+  - name: github.com/google-labs-code/stitch-skills/skills/design-md
+    description: "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
+    author: google-labs-code
+    tags: [design, stitch, design-system, ui]
+    featured: true
+
+  - name: github.com/google-labs-code/stitch-skills/skills/enhance-prompt
+    description: "Transform vague UI ideas into polished, Stitch-optimized prompts with improved specificity and design system context"
+    author: google-labs-code
+    tags: [prompt-engineering, stitch, ui, design]
+    featured: true
+
+  - name: github.com/google-labs-code/stitch-skills/skills/react-components
+    description: "Convert Stitch designs into modular Vite and React components using AST-based validation"
+    author: google-labs-code
+    tags: [react, stitch, frontend, components]
+    featured: true
+
+  - name: github.com/google-labs-code/stitch-skills/skills/stitch-loop
+    description: "Iteratively build websites using Google Stitch with an autonomous baton-passing loop pattern"
+    author: google-labs-code
+    tags: [stitch, frontend, automation, workflow]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+    description: "Master TypeScript's advanced type system — generics, conditional types, mapped types, template literals, and utility types for type-safe applications"
+    author: wshobson
+    tags: [typescript, advanced, types, frontend, backend]
+    featured: true
+
+  - name: github.com/neondatabase/agent-skills/skills/neon-postgres
+    description: "Guides and best practices for Neon Serverless Postgres — setup, connection methods, branching, autoscaling, scale-to-zero, and platform APIs"
+    author: neondatabase
+    tags: [postgres, database, serverless, neon, backend]
+    featured: true
+
+  - name: github.com/vercel/ai/skills/use-ai-sdk
+    description: "Build AI-powered features with the Vercel AI SDK — text generation, streaming, tool calling, agents, RAG, and multi-provider support"
+    author: vercel
+    tags: [ai, vercel, sdk, streaming, llm]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-performance-optimization
+    description: "Profile and optimize Python code using cProfile, memory profilers, and performance best practices for debugging bottlenecks"
+    author: wshobson
+    tags: [python, performance, profiling, optimization, backend]
+    featured: true
+
+  - name: github.com/googleworkspace/cli/skills/gws-gmail
+    description: "Send, read, and manage Gmail via Google Workspace CLI"
+    author: googleworkspace
+    tags: [gmail, google-workspace, productivity, email]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-basics
+    description: "Foundational Firebase skill covering project setup, CLI workflow, service initialization, and configuration for any Firebase task"
+    author: firebase
+    tags: [firebase, google, backend, mobile, setup]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-auth-basics
+    description: "Firebase Authentication setup and integration — email/password, OAuth providers, and session management"
+    author: firebase
+    tags: [firebase, auth, google, security, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-testing-patterns
+    description: "Python testing with pytest — fixtures, parametrize, mocking strategies, and test organization best practices"
+    author: wshobson
+    tags: [python, testing, pytest, quality, backend]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-app-hosting-basics
+    description: "Firebase App Hosting setup and deployment for web applications with CDN and CI/CD integration"
+    author: firebase
+    tags: [firebase, hosting, deployment, google, frontend]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-data-connect-basics
+    description: "Firebase Data Connect setup for SQL-based data connectivity between Firebase apps and Cloud SQL"
+    author: firebase
+    tags: [firebase, database, sql, google, backend]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-ai-logic-basics
+    description: "Firebase AI Logic integration for adding Gemini-powered AI features to Firebase applications"
+    author: firebase
+    tags: [firebase, ai, gemini, google, backend]
+    featured: true
+
+  - name: github.com/firebase/agent-skills/skills/firebase-hosting-basics
+    description: "Deploy and host web apps with Firebase Hosting — CDN, custom domains, and CI/CD setup"
+    author: firebase
+    tags: [firebase, hosting, deployment, google, frontend]
+    featured: true
+
+  - name: github.com/sickn33/antigravity-awesome-skills/skills/docker-expert
+    description: "Advanced Docker containerization expert — optimization, security hardening, multi-stage builds, and production deployment strategies"
+    author: sickn33
+    tags: [docker, containers, devops, security, infrastructure]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/developer-essentials/skills/e2e-testing-patterns
+    description: "End-to-end testing with Playwright and Cypress — reliable test suites, flaky test debugging, and deployment confidence"
+    author: wshobson
+    tags: [testing, e2e, playwright, cypress, quality]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/multi-stage-dockerfile
+    description: "Create optimized multi-stage Dockerfiles for any language or framework — smaller and more secure container images"
+    author: github/awesome-copilot
+    tags: [docker, dockerfile, containers, devops, optimization]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/javascript-typescript-jest
+    description: "JavaScript and TypeScript testing with Jest — mocking strategies, test structure, and common patterns"
+    author: github/awesome-copilot
+    tags: [javascript, typescript, jest, testing, frontend]
+    featured: true
+
