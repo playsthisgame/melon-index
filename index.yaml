@@ -690,6 +690,90 @@ skills:
     tags: [python, testing, pytest, quality, backend]
     featured: true
 
+  - name: github.com/wshobson/agents/plugins/python-development/skills/async-python-patterns
+    description: "Master Python asyncio, concurrent programming, and async/await patterns for high-performance I/O-bound and non-blocking applications"
+    author: wshobson
+    tags: [python, async, concurrency, asyncio, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-anti-patterns
+    description: "Review Python code for common anti-patterns to avoid — use as a checklist when reviewing code or debugging issues from known bad practices"
+    author: wshobson
+    tags: [python, code-quality, review, best-practices, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-background-jobs
+    description: "Python background job patterns — task queues, workers, and event-driven architecture for async task processing and long-running operations"
+    author: wshobson
+    tags: [python, background-jobs, queues, async, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-code-style
+    description: "Python code style, linting, formatting, naming conventions, and documentation standards — configuring linters and writing docstrings"
+    author: wshobson
+    tags: [python, style, linting, formatting, code-quality]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-configuration
+    description: "Python configuration management via environment variables and typed settings with pydantic-settings — secrets and environment-specific behavior"
+    author: wshobson
+    tags: [python, configuration, pydantic, environment, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-design-patterns
+    description: "Python design patterns — KISS, separation of concerns, single responsibility, and composition over inheritance for well-structured services"
+    author: wshobson
+    tags: [python, design-patterns, architecture, refactoring, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-error-handling
+    description: "Python error handling — input validation, exception hierarchies, and partial failure handling for robust APIs and batch processing"
+    author: wshobson
+    tags: [python, error-handling, exceptions, validation, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-observability
+    description: "Python observability — structured logging, metrics collection, and distributed tracing for debugging and monitoring production systems"
+    author: wshobson
+    tags: [python, observability, logging, tracing, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-packaging
+    description: "Create distributable Python packages with pyproject.toml and publish to PyPI — libraries, CLI tools, and distributable Python code"
+    author: wshobson
+    tags: [python, packaging, pypi, distribution, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-project-structure
+    description: "Python project organization, module architecture, and public API design — directory layouts, module structure, and __all__ definitions"
+    author: wshobson
+    tags: [python, project-structure, architecture, modules, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-resilience
+    description: "Python resilience patterns — automatic retries, exponential backoff, timeouts, and fault-tolerant decorators for handling transient failures"
+    author: wshobson
+    tags: [python, resilience, retries, fault-tolerance, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-resource-management
+    description: "Python resource management with context managers, cleanup patterns, and streaming — connections, file handles, and accumulated state"
+    author: wshobson
+    tags: [python, resource-management, context-managers, streaming, backend]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/python-type-safety
+    description: "Python type safety with type hints, generics, protocols, and strict type checking — configuring mypy/pyright and defining structural interfaces"
+    author: wshobson
+    tags: [python, types, mypy, generics, code-quality]
+    featured: true
+
+  - name: github.com/wshobson/agents/plugins/python-development/skills/uv-package-manager
+    description: "Master the uv package manager for fast Python dependency management, virtual environments, and modern Python project workflows"
+    author: wshobson
+    tags: [python, uv, package-manager, dependencies, tooling]
+    featured: true
+
   - name: github.com/firebase/agent-skills/skills/firebase-app-hosting-basics
     description: "Firebase App Hosting setup and deployment for web applications with CDN and CI/CD integration"
     author: firebase
