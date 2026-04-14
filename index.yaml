@@ -1008,3 +1008,9 @@ skills:
     tags: [marketing, social-media, content, linkedin, twitter]
     featured: true
 
+  - name: github.com/playsthisgame/melon-index/skills/video-to-gif
+    description: "Create high quality gifs from videos"
+    author: playsthisgame
+    tags: [video, gif, ffmpeg]
+    featured: true
+
