@@ -33,8 +33,8 @@ Before running anything, collect these from the user (or infer from context):
 | `output`  | `<input-basename>.gif` | Where to save the GIF |
 | `start`   | beginning of video | e.g. `0:05` or `5` (seconds) |
 | `duration` | full video | How many seconds to capture after `start` |
-| `fps`     | `15` | Frames per second — 10–15 is good for most GIFs; go up to 24 for smooth motion |
-| `width`   | `480` | Output width in pixels; height scales automatically |
+| `fps`     | `24` | Frames per second — 24 gives smooth motion; drop to 15 only to reduce file size |
+| `width`   | `640` | Output width in pixels; height scales automatically |
 
 If the user provides a start + end time instead of duration, compute
 `duration = end - start` before building the command.
@@ -66,7 +66,7 @@ ffmpeg -y \
   [-ss <start>] \
   -i "<input>" \
   [-t <duration>] \
-  -vf "fps=<fps>,scale=<width>:-1:flags=lanczos,palettegen=stats_mode=diff" \
+  -vf "fps=<fps>,scale=<width>:-1:flags=lanczos,palettegen=stats_mode=diff:reserve_transparent=0" \
   "$PALETTE"
 ```
 
@@ -85,7 +85,7 @@ ffmpeg -y \
   -i "<input>" \
   [-t <duration>] \
   -i "$PALETTE" \
-  -lavfi "fps=<fps>,scale=<width>:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle" \
+  -lavfi "fps=<fps>,scale=<width>:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a:diff_mode=rectangle" \
   "<output>"
 
 rm "$PALETTE"
@@ -93,8 +93,11 @@ rm "$PALETTE"
 
 **Why these settings:**
 - `flags=lanczos` — high-quality downscaling filter
-- `dither=bayer:bayer_scale=5` — Bayer dithering reduces color banding in
-  gradients without introducing too much noise; scale 5 is a good middle ground
+- `reserve_transparent=0` — uses all 256 palette slots for visible colors
+  instead of reserving one for transparency, maximizing color fidelity
+- `dither=sierra2_4a` — error-diffusion dithering that produces smoother
+  gradients and fewer visible patterns than Bayer dithering; the best
+  general-purpose dither mode for photographic and screen-recording content
 - `diff_mode=rectangle` — only re-dithers pixels that changed between frames,
   significantly shrinking file size for content with static regions
 
@@ -118,16 +121,16 @@ Report the file size and confirm the output path. If the file is very large
 User: "Make a gif of my screen recording from 0:12 to 0:18, make it 600px wide"
 
 ```bash
-# Parameters: start=12, duration=6, width=600, fps=15
+# Parameters: start=12, duration=6, width=600, fps=24
 PALETTE=$(mktemp /tmp/palette_XXXXXX.png)
 
 ffmpeg -y -ss 12 -i "screen_recording.mov" -t 6 \
-  -vf "fps=15,scale=600:-1:flags=lanczos,palettegen=stats_mode=diff" \
+  -vf "fps=24,scale=600:-1:flags=lanczos,palettegen=stats_mode=diff:reserve_transparent=0" \
   "$PALETTE"
 
 ffmpeg -y -ss 12 -i "screen_recording.mov" -t 6 \
   -i "$PALETTE" \
-  -lavfi "fps=15,scale=600:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle" \
+  -lavfi "fps=24,scale=600:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a:diff_mode=rectangle" \
   "screen_recording.gif"
 
 rm "$PALETTE"
@@ -137,10 +140,10 @@ ls -lh screen_recording.gif
 ## Troubleshooting
 
 **"Invalid option" or filter errors:** Older ffmpeg versions may not support
-`diff_mode=rectangle`. Drop it: `paletteuse=dither=bayer:bayer_scale=5`
+`diff_mode=rectangle` or `sierra2_4a`. Fall back to: `paletteuse=dither=bayer:bayer_scale=5`
 
-**GIF looks choppy:** Increase fps (up to 24). Also check if the source video
-has a lower frame rate than the target fps — don't go higher than the source.
+**GIF looks choppy:** Verify the source video's frame rate isn't lower than the
+target fps — don't go higher than the source. Use `ffprobe <input>` to check.
 
 **GIF file is huge:** Lower fps or width; trim to a shorter clip.
 
