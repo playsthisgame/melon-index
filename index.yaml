@@ -312,12 +312,6 @@ skills:
     tags: [golang, testing, quality]
     featured: true
 
-  - name: github.com/playsthisgame/melon-index/agentic-spec-dev
-    description: "Guidelines for developing with agents"
-    author: playsthisgame
-    tags: [development, agents, quality]
-    featured: true
-
   - name: github.com/github/awesome-copilot/skills/java-springboot
     description: "Best practices guide for building production-ready Spring Boot applications"
     author: github/awesome-copilot
