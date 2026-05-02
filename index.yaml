@@ -1014,3 +1014,111 @@ skills:
     tags: [mermaid, markdown]
     featured: true
 
+  - name: github.com/mattpocock/skills/skills/engineering/diagnose
+    description: "Disciplined diagnosis loop for hard bugs and performance regressions — reproduce, minimise, hypothesise, instrument, fix, regression-test"
+    author: mattpocock
+    tags: [debugging, workflow, productivity]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/grill-with-docs
+    description: "Grilling session that stress-tests a plan against the existing domain model, sharpens terminology, and updates documentation inline as decisions crystallise"
+    author: mattpocock
+    tags: [planning, workflow, documentation]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/improve-codebase-architecture
+    description: "Find deepening opportunities in a codebase — refactors that turn shallow modules into deep ones for better testability and AI-navigability"
+    author: mattpocock
+    tags: [architecture, refactoring, code-quality]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/setup-matt-pocock-skills
+    description: "Scaffold the per-repo configuration (AGENTS.md/CLAUDE.md, docs/agents/) that the mattpocock engineering skills require — run before first use"
+    author: mattpocock
+    tags: [setup, meta, productivity]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/tdd
+    description: "Test-driven development with red-green-refactor loop — tests verify behavior through public interfaces, not implementation details"
+    author: mattpocock
+    tags: [tdd, testing, workflow]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/to-issues
+    description: "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices"
+    author: mattpocock
+    tags: [planning, project-management, workflow]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/to-prd
+    description: "Turn the current conversation context and codebase understanding into a PRD and publish it to the project issue tracker"
+    author: mattpocock
+    tags: [planning, documentation, workflow]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/triage
+    description: "Triage issues through a state machine of triage roles — create, review, and move issues through incoming, ready-to-implement, and blocked states"
+    author: mattpocock
+    tags: [project-management, workflow, issues]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/engineering/zoom-out
+    description: "Prompt the agent to zoom out and map all relevant modules and callers using the project's domain glossary — for unfamiliar code areas"
+    author: mattpocock
+    tags: [navigation, codebase, workflow]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/misc/git-guardrails-claude-code
+    description: "Set up Claude Code PreToolUse hooks to block dangerous git commands (push, reset --hard, clean, branch -D) before they execute"
+    author: mattpocock
+    tags: [git, safety, claude-code]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/misc/migrate-to-shoehorn
+    description: "Migrate test files from `as` type assertions to @total-typescript/shoehorn for type-safe partial test data"
+    author: mattpocock
+    tags: [typescript, testing, migration]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/misc/scaffold-exercises
+    description: "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting — for course content authoring"
+    author: mattpocock
+    tags: [scaffolding, education, typescript]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/misc/setup-pre-commit
+    description: "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo"
+    author: mattpocock
+    tags: [git, hooks, workflow]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/personal/edit-article
+    description: "Edit and improve articles by restructuring sections, respecting information dependencies, and tightening prose"
+    author: mattpocock
+    tags: [writing, editing, content]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/personal/obsidian-vault
+    description: "Search, create, and manage notes in an Obsidian vault with wikilinks and index notes"
+    author: mattpocock
+    tags: [notes, obsidian, productivity]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/productivity/caveman
+    description: "Ultra-compressed communication mode — cuts token usage ~75% by dropping filler and pleasantries while keeping full technical accuracy"
+    author: mattpocock
+    tags: [productivity, tokens, communication]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/productivity/grill-me
+    description: "Interview the user relentlessly about a plan or design, walking down each branch of the decision tree until reaching shared understanding"
+    author: mattpocock
+    tags: [planning, workflow, productivity]
+    featured: true
+
+  - name: github.com/mattpocock/skills/skills/productivity/write-a-skill
+    description: "Create new agent skills with proper structure, progressive disclosure, and bundled resources"
+    author: mattpocock
+    tags: [meta, skills, developer-tools]
+    featured: true
+

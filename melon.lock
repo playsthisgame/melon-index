@@ -1,17 +1,17 @@
-generated_at: "2026-04-12T02:55:59Z"
+generated_at: "2026-05-02T02:50:54Z"
 dependencies:
     - name: github.com/JuliusBrussee/caveman/skills/caveman
-      version: 1.5.1
-      git_tag: v1.5.1
+      version: 1.7.0
+      git_tag: v1.7.0
       repo_url: https://github.com/JuliusBrussee/caveman
       subdir: skills/caveman
       entrypoint: SKILL.md
-      tree_hash: sha256:69bcd56a994d4460807a9a1d8162bcd9fdff4a43bf09f6cfc27fab4cb32143ea
+      tree_hash: sha256:b6876c29ebadd1c364ecd4a6505a6772f6af4b78893a6ecd74b9167c4a3e51b6
       files:
         - SKILL.md
     - name: github.com/JuliusBrussee/caveman/skills/caveman-commit
-      version: 1.5.1
-      git_tag: v1.5.1
+      version: 1.7.0
+      git_tag: v1.7.0
       repo_url: https://github.com/JuliusBrussee/caveman
       subdir: skills/caveman-commit
       entrypoint: SKILL.md
@@ -19,8 +19,8 @@ dependencies:
       files:
         - SKILL.md
     - name: github.com/JuliusBrussee/caveman/skills/caveman-help
-      version: 1.5.1
-      git_tag: v1.5.1
+      version: 1.7.0
+      git_tag: v1.7.0
       repo_url: https://github.com/JuliusBrussee/caveman
       subdir: skills/caveman-help
       entrypoint: SKILL.md
@@ -28,8 +28,8 @@ dependencies:
       files:
         - SKILL.md
     - name: github.com/JuliusBrussee/caveman/skills/caveman-review
-      version: 1.5.1
-      git_tag: v1.5.1
+      version: 1.7.0
+      git_tag: v1.7.0
       repo_url: https://github.com/JuliusBrussee/caveman
       subdir: skills/caveman-review
       entrypoint: SKILL.md
@@ -37,22 +37,28 @@ dependencies:
       files:
         - SKILL.md
     - name: github.com/JuliusBrussee/caveman/skills/compress
-      version: 1.5.1
-      git_tag: v1.5.1
+      version: 1.7.0
+      git_tag: v1.7.0
       repo_url: https://github.com/JuliusBrussee/caveman
       subdir: skills/compress
       entrypoint: SKILL.md
-      tree_hash: sha256:5f37344cce0bdbdca1da5eec58599aaba42a98b7496f7c25acbbd802c349695d
+      tree_hash: sha256:1722f6ab2df302e68b9c7a1c809f32ba12357f9cc6ac4032e865ca9fc1d61529
       files:
         - SKILL.md
-        - scripts
+        - scripts/__init__.py
+        - scripts/__main__.py
+        - scripts/benchmark.py
+        - scripts/cli.py
+        - scripts/compress.py
+        - scripts/detect.py
+        - scripts/validate.py
     - name: github.com/jeremylongshore/claude-code-plugins-plus-skills/plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master
-      version: c8a915cb82a0
+      version: 35c3d49ebc04
       git_tag: main
       repo_url: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
       subdir: plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master
       entrypoint: SKILL.md
-      tree_hash: sha256:d6b49817e321c28a1bdde86a47c1998cee5857dcfb77206881d495cf1a00a5f3
+      tree_hash: sha256:191bb62ae11da1aae8195070c93e4e91c8b7867f07493367a9e38f4586c0606b
       files:
         - SKILL.md
         - assets/README.md
@@ -60,7 +66,7 @@ dependencies:
         - references/SKILL.full.md
         - scripts/README.md
     - name: github.com/vercel-labs/skills/skills/find-skills
-      version: 004c73806e35
+      version: 7c0a9af3f873
       git_tag: main
       repo_url: https://github.com/vercel-labs/skills
       subdir: skills/find-skills
