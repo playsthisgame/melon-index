@@ -1008,6 +1008,12 @@ skills:
     tags: [video, gif, ffmpeg]
     featured: true
 
+  - name: github.com/playsthisgame/melon-index/skills/melon
+    description: "Manage agent skill dependencies with melon — install, add, remove, update, and search skills across AI tools"
+    author: playsthisgame
+    tags: [melon, skills, dependency-management, workflow, developer-tools]
+    featured: true
+
   - name: github.com/softaworks/agent-toolkit/skills/mermaid-diagrams
     description: "A comprehensive guide for creating professional software diagrams using Mermaid's text-based syntax"
     author: softaworks

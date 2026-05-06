@@ -1,4 +1,4 @@
-generated_at: "2026-05-02T02:50:54Z"
+generated_at: "2026-05-06T05:07:26Z"
 dependencies:
     - name: github.com/JuliusBrussee/caveman/skills/caveman
       version: 1.7.0
@@ -52,8 +52,34 @@ dependencies:
         - scripts/compress.py
         - scripts/detect.py
         - scripts/validate.py
+    - name: github.com/anthropics/skills/skills/skill-creator
+      version: d230a6dd6eb1
+      git_tag: main
+      repo_url: https://github.com/anthropics/skills
+      subdir: skills/skill-creator
+      entrypoint: SKILL.md
+      tree_hash: sha256:66d5a406648f5420b85bf686d0b198255011b71f9a544cdab71ef9d5e86bfe8f
+      files:
+        - LICENSE.txt
+        - SKILL.md
+        - agents/analyzer.md
+        - agents/comparator.md
+        - agents/grader.md
+        - assets/eval_review.html
+        - eval-viewer/generate_review.py
+        - eval-viewer/viewer.html
+        - references/schemas.md
+        - scripts/__init__.py
+        - scripts/aggregate_benchmark.py
+        - scripts/generate_report.py
+        - scripts/improve_description.py
+        - scripts/package_skill.py
+        - scripts/quick_validate.py
+        - scripts/run_eval.py
+        - scripts/run_loop.py
+        - scripts/utils.py
     - name: github.com/jeremylongshore/claude-code-plugins-plus-skills/plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master
-      version: 35c3d49ebc04
+      version: 3a2d27d6316a
       git_tag: main
       repo_url: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
       subdir: plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master
@@ -66,7 +92,7 @@ dependencies:
         - references/SKILL.full.md
         - scripts/README.md
     - name: github.com/vercel-labs/skills/skills/find-skills
-      version: 7c0a9af3f873
+      version: eec87fd44fca
       git_tag: main
       repo_url: https://github.com/vercel-labs/skills
       subdir: skills/find-skills
