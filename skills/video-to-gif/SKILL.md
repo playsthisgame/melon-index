@@ -33,8 +33,8 @@ Before running anything, collect these from the user (or infer from context):
 | `output`  | `<input-basename>.gif` | Where to save the GIF |
 | `start`   | beginning of video | e.g. `0:05` or `5` (seconds) |
 | `duration` | full video | How many seconds to capture after `start` |
-| `fps`     | `24` | Frames per second — 24 gives smooth motion; drop to 15 only to reduce file size |
-| `width`   | `640` | Output width in pixels; height scales automatically |
+| `fps`     | source fps | Match the source — only lower to reduce file size |
+| `width`   | source width | Original dimensions — only lower to reduce file size |
 
 If the user provides a start + end time instead of duration, compute
 `duration = end - start` before building the command.
@@ -55,7 +55,26 @@ If ffmpeg is missing, tell the user to install it:
 - Ubuntu/Debian: `sudo apt install ffmpeg`
 - Windows: download from https://ffmpeg.org/download.html
 
-## Step 3: Generate the palette (pass 1)
+## Step 3: Detect source properties
+
+Run ffprobe to get the source fps and dimensions so the GIF matches the
+original video as closely as possible:
+
+```bash
+ffprobe -v quiet -select_streams v:0 \
+  -show_entries stream=r_frame_rate,width,height \
+  -of default=noprint_wrappers=1 "<input>"
+```
+
+- `r_frame_rate` returns a fraction like `30000/1001` (≈29.97 fps) — evaluate
+  it (e.g. `python3 -c "print(30000/1001)"`) to get the decimal fps to pass
+  to the `fps=` filter.
+- Use the reported `width` as the `scale` value unless the user requested
+  a different size.
+
+If the user already specified fps or width, skip this step for that parameter.
+
+## Step 4: Generate the palette (pass 1)
 
 Save the palette to a temp file:
 
@@ -66,18 +85,19 @@ ffmpeg -y \
   [-ss <start>] \
   -i "<input>" \
   [-t <duration>] \
-  -vf "fps=<fps>,scale=<width>:-1:flags=lanczos,palettegen=stats_mode=diff:reserve_transparent=0" \
+  -vf "fps=<fps>,scale=<width>:-1:flags=lanczos,palettegen=stats_mode=full:max_colors=256:reserve_transparent=0" \
   "$PALETTE"
 ```
 
-**Why this matters:** `palettegen=stats_mode=diff` builds the palette from
-the *differences* between frames (motion areas), so the 256 colors are
-spent where they matter most rather than on static background pixels.
+**Why this matters:** `palettegen=stats_mode=full` samples *all* frames
+equally to build the 256-color palette, so every part of the video —
+including static areas — is well represented. This gives the best overall
+color fidelity across the entire clip.
 
 **Important:** place `-ss` *before* `-i` for fast seeking; place `-t` *after*
 `-i` to keep the duration precise.
 
-## Step 4: Encode the GIF (pass 2)
+## Step 5: Encode the GIF (pass 2)
 
 ```bash
 ffmpeg -y \
@@ -85,23 +105,26 @@ ffmpeg -y \
   -i "<input>" \
   [-t <duration>] \
   -i "$PALETTE" \
-  -lavfi "fps=<fps>,scale=<width>:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a:diff_mode=rectangle" \
+  -lavfi "fps=<fps>,scale=<width>:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a" \
   "<output>"
 
 rm "$PALETTE"
 ```
 
 **Why these settings:**
-- `flags=lanczos` — high-quality downscaling filter
+- `flags=lanczos` — highest-quality resampling filter, critical when scaling
+- `stats_mode=full` — palette covers all frames equally, not just motion areas
+- `max_colors=256` — use all 256 slots; the GIF format's hard ceiling
 - `reserve_transparent=0` — uses all 256 palette slots for visible colors
   instead of reserving one for transparency, maximizing color fidelity
 - `dither=sierra2_4a` — error-diffusion dithering that produces smoother
   gradients and fewer visible patterns than Bayer dithering; the best
   general-purpose dither mode for photographic and screen-recording content
-- `diff_mode=rectangle` — only re-dithers pixels that changed between frames,
-  significantly shrinking file size for content with static regions
+- No `diff_mode=rectangle` — every frame is fully re-dithered independently,
+  preserving maximum quality (omitting it trades some file size for better
+  per-frame accuracy)
 
-## Step 5: Report results
+## Step 6: Report results
 
 After the GIF is created, show the user:
 
@@ -111,9 +134,10 @@ ffprobe -v quiet -show_entries format=duration -of default=noprint_wrappers=1 "<
 ```
 
 Report the file size and confirm the output path. If the file is very large
-(> 10 MB), proactively suggest ways to reduce it:
-- Lower `fps` (e.g. 10 instead of 15)
-- Reduce `width` (e.g. 320 instead of 480)
+(> 50 MB), proactively suggest ways to reduce it while keeping the best
+quality possible:
+- Reduce `width` (e.g. half the source width)
+- Lower `fps` (e.g. half the source fps — motion still looks smooth at 15 fps)
 - Trim to a shorter duration
 
 ## Full example
@@ -121,16 +145,22 @@ Report the file size and confirm the output path. If the file is very large
 User: "Make a gif of my screen recording from 0:12 to 0:18, make it 600px wide"
 
 ```bash
-# Parameters: start=12, duration=6, width=600, fps=24
+# Detect source fps first
+ffprobe -v quiet -select_streams v:0 \
+  -show_entries stream=r_frame_rate \
+  -of default=noprint_wrappers=1 "screen_recording.mov"
+# e.g. output: r_frame_rate=60/1  →  use fps=60
+
+# Parameters: start=12, duration=6, width=600, fps=60
 PALETTE=$(mktemp /tmp/palette_XXXXXX.png)
 
 ffmpeg -y -ss 12 -i "screen_recording.mov" -t 6 \
-  -vf "fps=24,scale=600:-1:flags=lanczos,palettegen=stats_mode=diff:reserve_transparent=0" \
+  -vf "fps=60,scale=600:-1:flags=lanczos,palettegen=stats_mode=full:max_colors=256:reserve_transparent=0" \
   "$PALETTE"
 
 ffmpeg -y -ss 12 -i "screen_recording.mov" -t 6 \
   -i "$PALETTE" \
-  -lavfi "fps=24,scale=600:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a:diff_mode=rectangle" \
+  -lavfi "fps=60,scale=600:-1:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a" \
   "screen_recording.gif"
 
 rm "$PALETTE"
@@ -140,15 +170,20 @@ ls -lh screen_recording.gif
 ## Troubleshooting
 
 **"Invalid option" or filter errors:** Older ffmpeg versions may not support
-`diff_mode=rectangle` or `sierra2_4a`. Fall back to: `paletteuse=dither=bayer:bayer_scale=5`
+`sierra2_4a`. Fall back to: `paletteuse=dither=bayer:bayer_scale=5`
 
-**GIF looks choppy:** Verify the source video's frame rate isn't lower than the
-target fps — don't go higher than the source. Use `ffprobe <input>` to check.
+**GIF looks choppy:** Verify the source video's frame rate isn't lower than
+the target fps — don't set fps higher than the source. Use `ffprobe <input>`
+to check.
 
-**GIF file is huge:** Lower fps or width; trim to a shorter clip.
+**GIF file is very large:** Reduce width or fps; trim to a shorter clip.
+Adding `diff_mode=rectangle` to `paletteuse` can shrink file size at a small
+quality cost: `paletteuse=dither=sierra2_4a:diff_mode=rectangle`
 
-**Colors look washed out:** Try `stats_mode=full` in palettegen (uses all
-frames equally) — better for videos where the background changes a lot.
+**Colors look banded in motion areas:** Switch `stats_mode=full` to
+`stats_mode=diff` in palettegen — this focuses the palette on pixels that
+change between frames, which can improve motion fidelity at the cost of
+static-area color accuracy.
 
 **Seeking is off:** If `-ss` before `-i` skips too aggressively, move it
 to after `-i`: `ffmpeg -i input.mp4 -ss 12 ...` (slower but frame-accurate).
