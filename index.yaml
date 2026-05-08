@@ -1128,3 +1128,9 @@ skills:
     tags: [meta, skills, developer-tools]
     featured: true
 
+  - name: github.com/mattpocock/skills/skills/in-progress/handoff
+    description: "Compact the current conversation into a handoff document for another agent to pick up"
+    author: mattpocock
+    tags: [workflow, agentic, productivity, handoff]
+    featured: true
+
