@@ -1002,6 +1002,42 @@ skills:
     tags: [marketing, social-media, content, linkedin, twitter]
     featured: true
 
+  - name: github.com/wshobson/agents/plugins/systems-programming/skills/rust-async-patterns
+    description: "Master Rust async programming with Tokio — tasks, channels, streams, and concurrent patterns for building async Rust applications"
+    author: wshobson
+    tags: [rust, async, concurrency, tokio, backend]
+    featured: true
+
+  - name: github.com/apollographql/skills/skills/rust-best-practices
+    description: "Idiomatic Rust code based on Apollo GraphQL's best practices — ownership, borrowing, error handling with Result, and performance optimization"
+    author: apollographql
+    tags: [rust, best-practices, backend, systems-programming]
+    featured: true
+
+  - name: github.com/github/awesome-copilot/skills/rust-mcp-server-generator
+    description: "Generate a complete Rust MCP server project with tools, prompts, resources, and tests using the official rmcp SDK"
+    author: github/awesome-copilot
+    tags: [rust, mcp, developer-tools, server, code-generation]
+    featured: true
+
+  - name: github.com/zhanghandong/rust-skills/skills/m15-anti-pattern
+    description: "Identify and fix Rust anti-patterns — borrow checker fights, excessive cloning, unwrap in production, and other common pitfalls"
+    author: zhanghandong
+    tags: [rust, anti-patterns, code-review, code-quality]
+    featured: true
+
+  - name: github.com/jeffallan/claude-skills/skills/rust-engineer
+    description: "Expert-level Rust engineer — ownership, lifetimes, trait hierarchies, async/await with Tokio, FFI bindings, and memory-safe systems programming"
+    author: jeffallan
+    tags: [rust, systems-programming, backend, best-practices, code-generation]
+    featured: true
+
+  - name: github.com/affaan-m/everything-claude-code/skills/rust-testing
+    description: "Rust testing patterns — unit tests, integration tests, async testing, property-based testing, mocking, and coverage following TDD methodology"
+    author: affaan-m
+    tags: [rust, testing, tdd, quality]
+    featured: true
+
   - name: github.com/playsthisgame/melon-index/skills/video-to-gif
     description: "Create high quality gifs from videos"
     author: playsthisgame
