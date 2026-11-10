@@ -1050,6 +1050,12 @@ skills:
     tags: [melon, skills, dependency-management, workflow, developer-tools]
     featured: true
 
+  - name: github.com/playsthisgame/melon-index/skills/gh-projects-take-ticket
+    description: "Take the next Ready ticket from a GitHub Projects board, implement it in an isolated worktree, and open a PR"
+    author: playsthisgame
+    tags: [github, github-projects, issues, pull-requests, workflow, agentic]
+    featured: true
+
   - name: github.com/softaworks/agent-toolkit/skills/mermaid-diagrams
     description: "A comprehensive guide for creating professional software diagrams using Mermaid's text-based syntax"
     author: softaworks
