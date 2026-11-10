@@ -1,0 +1,15 @@
+name: spring-expert
+version: 1.1.0
+description: "Build Spring Boot applications: project setup, idiomatic Spring, JUnit testing, Javadoc, API design, and PostgreSQL"
+type: pack
+entrypoint: SKILL.md
+tags: [java, spring-boot, backend]
+dependencies:
+  github.com/github/awesome-copilot/skills/java-springboot: "main"
+  github.com/github/awesome-copilot/skills/create-spring-boot-java-project: "main"
+  github.com/github/awesome-copilot/skills/java-junit: "main"
+  github.com/github/awesome-copilot/skills/java-docs: "main"
+  github.com/jeffallan/claude-skills/skills/spring-boot-engineer: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/java-architect: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/api-designer: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/postgres-pro: "^0.4.20"

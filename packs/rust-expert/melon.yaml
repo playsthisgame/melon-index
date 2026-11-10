@@ -1,0 +1,11 @@
+name: rust-expert
+version: 1.1.0
+description: "Rust: ownership-aware design, async patterns, testing, and common anti-patterns"
+type: pack
+tags: [rust, systems]
+dependencies:
+  github.com/jeffallan/claude-skills/skills/rust-engineer: "^0.4.20"
+  github.com/apollographql/skills/skills/rust-best-practices: "^1.4.5"
+  github.com/wshobson/agents/plugins/systems-programming/skills/rust-async-patterns: "main"
+  github.com/affaan-m/ECC/skills/rust-testing: "^2.2.3"
+  github.com/actionbook/rust-skills/skills/m15-anti-pattern: "^2.0.9"

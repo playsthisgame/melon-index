@@ -1,0 +1,10 @@
+name: office-docs
+version: 1.1.0
+description: "Create and edit Word, PDF, PowerPoint, and Excel files (anthropics/skills)"
+type: pack
+tags: [documents, office, productivity]
+dependencies:
+  github.com/anthropics/skills/skills/docx: "main"
+  github.com/anthropics/skills/skills/pdf: "main"
+  github.com/anthropics/skills/skills/pptx: "main"
+  github.com/anthropics/skills/skills/xlsx: "main"

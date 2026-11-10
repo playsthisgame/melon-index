@@ -1,0 +1,11 @@
+name: nextjs-fullstack
+version: 1.1.0
+description: "Full-stack Next.js: everything in react-frontend plus App Router, Supabase, shadcn/ui, and Vercel deploys"
+type: pack
+tags: [nextjs, react, fullstack]
+dependencies:
+  github.com/playsthisgame/melon-index/packs/react-frontend: "^1.1.0"
+  github.com/jeffallan/claude-skills/skills/nextjs-developer: "^0.4.20"
+  github.com/vercel-labs/agent-skills/skills/deploy-to-vercel: "main"
+  github.com/supabase/agent-skills/skills/supabase: "^0.1.9"
+  github.com/shadcn-ui/ui/skills/shadcn: "main"

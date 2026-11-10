@@ -1,0 +1,13 @@
+name: agent-workflow
+version: 1.1.0
+description: "A disciplined process for coding agents: brainstorm, plan, test-first, debug systematically, and verify before finishing (obra/superpowers)"
+type: pack
+tags: [workflow, planning, tdd]
+dependencies:
+  github.com/obra/superpowers/skills/brainstorming: "^7.0.2"
+  github.com/obra/superpowers/skills/writing-plans: "^7.0.2"
+  github.com/obra/superpowers/skills/executing-plans: "^7.0.2"
+  github.com/obra/superpowers/skills/test-driven-development: "^7.0.2"
+  github.com/obra/superpowers/skills/systematic-debugging: "^7.0.2"
+  github.com/obra/superpowers/skills/verification-before-completion: "^7.0.2"
+  github.com/obra/superpowers/skills/using-git-worktrees: "^7.0.2"

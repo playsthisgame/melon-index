@@ -1,0 +1,11 @@
+name: cloudflare-workers
+version: 1.1.0
+description: "Build on Cloudflare: product selection, Workers best practices, Wrangler, Durable Objects, and the Agents SDK (official cloudflare/skills)"
+type: pack
+tags: [cloudflare, serverless, edge]
+dependencies:
+  github.com/cloudflare/skills/skills/cloudflare: "main"
+  github.com/cloudflare/skills/skills/workers-best-practices: "main"
+  github.com/cloudflare/skills/skills/wrangler: "main"
+  github.com/cloudflare/skills/skills/durable-objects: "main"
+  github.com/cloudflare/skills/skills/agents-sdk: "main"

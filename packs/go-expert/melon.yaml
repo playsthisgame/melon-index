@@ -1,0 +1,9 @@
+name: go-expert
+version: 1.1.0
+description: "Idiomatic Go: concurrency, patterns, and table-driven testing"
+type: pack
+tags: [go, backend]
+dependencies:
+  github.com/jeffallan/claude-skills/skills/golang-pro: "^0.4.20"
+  github.com/affaan-m/ECC/skills/golang-patterns: "^2.2.3"
+  github.com/affaan-m/ECC/skills/golang-testing: "^2.2.3"

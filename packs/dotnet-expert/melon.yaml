@@ -1,0 +1,13 @@
+name: dotnet-expert
+version: 1.1.0
+description: "C# and .NET: ASP.NET Core Web APIs, EF Core, performance, async, and testing (official dotnet/skills)"
+type: pack
+tags: [dotnet, csharp, backend]
+dependencies:
+  github.com/dotnet/skills/plugins/dotnet/skills/csharp-expert: "main"
+  github.com/dotnet/skills/plugins/dotnet-aspnetcore/skills/dotnet-webapi: "main"
+  github.com/dotnet/skills/plugins/dotnet-data/skills/optimizing-ef-core-queries: "^1.0.0"
+  github.com/dotnet/skills/plugins/dotnet-diag/skills/analyzing-dotnet-performance: "^1.0.0"
+  github.com/dotnet/skills/plugins/dotnet-test/skills/code-testing: "main"
+  github.com/github/awesome-copilot/skills/csharp-async: "main"
+  github.com/github/awesome-copilot/skills/dotnet-best-practices: "main"
