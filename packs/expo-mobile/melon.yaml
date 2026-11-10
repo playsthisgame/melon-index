@@ -1,0 +1,12 @@
+name: expo-mobile
+version: 1.1.0
+description: "React Native with Expo: routing, native UI, SDK upgrades, and EAS workflows (official expo/skills)"
+type: pack
+tags: [expo, react-native, mobile]
+dependencies:
+  github.com/expo/skills/plugins/expo/skills/expo-overview: "main"
+  github.com/expo/skills/plugins/expo/skills/expo-router: "main"
+  github.com/expo/skills/plugins/expo/skills/expo-native-ui: "main"
+  github.com/expo/skills/plugins/expo/skills/expo-upgrade: "main"
+  github.com/expo/skills/plugins/expo/skills/eas-workflows: "main"
+  github.com/vercel-labs/agent-skills/skills/react-native-skills: "main"

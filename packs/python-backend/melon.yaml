@@ -1,0 +1,13 @@
+name: python-backend
+version: 1.1.0
+description: "Python services: modern tooling (uv, ruff), type safety, async, FastAPI, Django, and pytest patterns"
+type: pack
+tags: [python, backend, api]
+dependencies:
+  github.com/jeffallan/claude-skills/skills/python-pro: "^0.4.20"
+  github.com/trailofbits/skills/plugins/modern-python/skills/modern-python: "main"
+  github.com/wshobson/agents/plugins/python-development/skills/python-type-safety: "main"
+  github.com/wshobson/agents/plugins/python-development/skills/async-python-patterns: "main"
+  github.com/wshobson/agents/plugins/python-development/skills/python-testing-patterns: "main"
+  github.com/jeffallan/claude-skills/skills/fastapi-expert: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/django-expert: "^0.4.20"

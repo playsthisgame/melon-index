@@ -1,0 +1,13 @@
+name: security-audit
+version: 1.1.0
+description: "Security review toolkit: Semgrep and CodeQL scans, diff review, supply-chain risk, footguns, and threat modeling"
+type: pack
+tags: [security, audit, code-review]
+dependencies:
+  github.com/trailofbits/skills/plugins/static-analysis/skills/semgrep: "main"
+  github.com/trailofbits/skills/plugins/static-analysis/skills/codeql: "main"
+  github.com/trailofbits/skills/plugins/differential-review/skills/differential-review: "main"
+  github.com/trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor: "main"
+  github.com/trailofbits/skills/plugins/sharp-edges/skills/sharp-edges: "main"
+  github.com/getsentry/skills/skills/security-review: "main"
+  github.com/openai/skills/skills/.curated/security-threat-model: "main"

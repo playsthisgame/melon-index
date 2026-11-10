@@ -1,0 +1,13 @@
+name: cloud-infra
+version: 1.1.0
+description: "Infrastructure as code and containers: Terraform (official HashiCorp), Kubernetes, and Docker"
+type: pack
+tags: [terraform, kubernetes, devops]
+dependencies:
+  github.com/hashicorp/agent-skills/plugins/terraform/skills/terraform-style-guide: "main"
+  github.com/hashicorp/agent-skills/plugins/terraform/skills/terraform-test: "main"
+  github.com/hashicorp/agent-skills/plugins/terraform/skills/refactor-module: "main"
+  github.com/jeffallan/claude-skills/skills/terraform-engineer: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/kubernetes-specialist: "^0.4.20"
+  github.com/sickn33/agentic-awesome-skills/skills/docker-expert: "^20.7.0"
+  github.com/github/awesome-copilot/skills/multi-stage-dockerfile: "main"

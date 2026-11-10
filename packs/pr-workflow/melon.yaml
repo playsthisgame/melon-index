@@ -1,0 +1,14 @@
+name: pr-workflow
+version: 1.1.0
+description: "Ship changes cleanly: find bugs, review code, write commits and PR descriptions, fix CI, and address review comments"
+type: pack
+tags: [git, code-review, workflow]
+dependencies:
+  github.com/getsentry/skills/skills/find-bugs: "main"
+  github.com/getsentry/skills/skills/code-review: "main"
+  github.com/getsentry/skills/skills/commit: "main"
+  github.com/getsentry/skills/skills/pr-writer: "main"
+  github.com/openai/skills/skills/.curated/gh-fix-ci: "main"
+  github.com/openai/skills/skills/.curated/gh-address-comments: "main"
+  github.com/obra/superpowers/skills/requesting-code-review: "^7.0.2"
+  github.com/obra/superpowers/skills/receiving-code-review: "^7.0.2"

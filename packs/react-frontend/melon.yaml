@@ -1,0 +1,13 @@
+name: react-frontend
+version: 1.1.0
+description: "Modern React frontends: Vercel's React guidance, composition patterns, design quality, TypeScript, and UI testing"
+type: pack
+tags: [react, frontend, typescript]
+dependencies:
+  github.com/vercel-labs/agent-skills/skills/react-best-practices: "main"
+  github.com/vercel-labs/agent-skills/skills/composition-patterns: "main"
+  github.com/vercel-labs/agent-skills/skills/web-design-guidelines: "main"
+  github.com/anthropics/skills/skills/frontend-design: "main"
+  github.com/jeffallan/claude-skills/skills/react-expert: "^0.4.20"
+  github.com/jeffallan/claude-skills/skills/typescript-pro: "^0.4.20"
+  github.com/anthropics/skills/skills/webapp-testing: "main"

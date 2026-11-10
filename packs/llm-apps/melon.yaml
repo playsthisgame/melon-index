@@ -1,0 +1,12 @@
+name: llm-apps
+version: 1.1.0
+description: "Build LLM applications: the Claude API, MCP servers, LangChain and LangGraph agents, and RAG"
+type: pack
+tags: [llm, agents, rag]
+dependencies:
+  github.com/anthropics/skills/skills/claude-api: "main"
+  github.com/anthropics/skills/skills/mcp-builder: "main"
+  github.com/langchain-ai/langchain-skills/config/skills/langchain-fundamentals: "^0.1.0"
+  github.com/langchain-ai/langchain-skills/config/skills/langgraph-fundamentals: "^0.1.0"
+  github.com/langchain-ai/langchain-skills/config/skills/langchain-rag: "^0.1.0"
+  github.com/jeffallan/claude-skills/skills/rag-architect: "^0.4.20"
